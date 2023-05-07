@@ -15,8 +15,8 @@
 
 #First, we want to find the smallest number in the array
 def find_smallest(list)
-  smallest = list[0]
-  smallest_index = 0
+  smallest = list[0] #store smallest value
+  smallest_index = 0 #store index of smallest value
 
   list.each_with_index do |item, i|
     if list[i] < smallest
@@ -31,7 +31,7 @@ end
 def selection_sort(list)
   new_list = []
   (list.length).times do
-    smallest_index = find_smallest(list)
+    smallest_index = find_smallest(list) #find smallest element in array and add to new array
     new_list << list.delete_at(smallest_index)
   end
   return new_list
