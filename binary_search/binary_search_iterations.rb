@@ -5,7 +5,7 @@ def binary_search_iterations(list, item)
   iterations = 0 #will increment each time search is run unsuccessfully
 
   while low <= high
-    mid = (low + high)/2 #check middle element
+    mid = ((low + high)/2).floor #check middle element
     guess = list[mid] 
 
     if guess == item

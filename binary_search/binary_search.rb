@@ -5,7 +5,7 @@ def binary_search(list, item)
   high = list.length - 1 #last index of array
 
   while low <= high
-    mid = (low + high)/2 #check middle element
+    mid = ((low + high)/2).floor #check middle element
     guess = list[mid] 
 
     if guess == item
